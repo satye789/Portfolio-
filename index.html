@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Satyendra Yadav - Aspiring AI Specialist & Data Analyst Portfolio. Explore my projects, skills, and AI architecture concepts." />
+    <meta property="og:title" content="Satyendra.dev - AI Specialist Portfolio" />
+    <meta property="og:description" content="Aspiring AI Specialist & Data Analyst. Check out my latest AI/ML projects and technical arsenal." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://api.dicebear.com/7.x/avataaars/png?seed=Satyendra&backgroundColor=030305" />
+    <title>Satyendra.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Three.js Canvas Container -->
+    <canvas id="bg-canvas" aria-label="Interactive 3D AI Network Background" role="img"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+      <div class="logo">Satyendra.dev</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#ai-tech">AI & ML</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/resume.pdf" target="_blank" download class="nav-resume">Resume</a></li>
+      </ul>
+    </nav>
+
+    <main class="content-wrapper">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section glass-panel">
+        <h3 class="hero-subtitle gradient-text">Hello, I'm</h3>
+        <h1 class="hero-title">Satyendra <span>Yadav</span></h1>
+        <h2 class="hero-role">
+          <span class="gradient-text">Aspiring AI Specialist</span> <br/> 
+          Data Analyst <br/> 
+          Problem Solver
+        </h2>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+          <a href="/resume.pdf" class="btn secondary-btn resume-btn" target="_blank" download>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:bottom; margin-right:5px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Resume
+          </a>
+          <button id="theme-toggle" class="btn theme-btn" aria-label="Toggle Light/Dark Mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+      </section>
+
+      <!-- TECH MARQUEE (INFINITE ANIMATION) -->
+      <div class="tech-marquee-container">
+        <div class="tech-marquee">
+          <div class="tech-marquee-content">
+            <span>Artificial Intelligence</span> • <span>Python</span> • <span>Machine Learning</span> • <span>C++</span> • <span>Deep Learning</span> • <span>Java</span> • <span>Neural Networks</span> • <span>SQL</span> • <span>TensorFlow</span> • <span>JavaScript</span> • <span>PyTorch</span> • <span>Rust</span> • <span>Computer Vision</span> • <span>Go</span> • <span>NLP</span> • <span>R</span> •
+          </div>
+          <div class="tech-marquee-content" aria-hidden="true">
+            <span>Artificial Intelligence</span> • <span>Python</span> • <span>Machine Learning</span> • <span>C++</span> • <span>Deep Learning</span> • <span>Java</span> • <span>Neural Networks</span> • <span>SQL</span> • <span>TensorFlow</span> • <span>JavaScript</span> • <span>PyTorch</span> • <span>Rust</span> • <span>Computer Vision</span> • <span>Go</span> • <span>NLP</span> • <span>R</span> •
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section glass-panel">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Satyendra&backgroundColor=030305&style=circle" alt="Satyendra Yadav Profile">
+          </div>
+          <div class="about-content">
+            <p>
+              Aspiring AI specialist eager to leverage machine learning and data analysis skills to drive innovation and solve complex problems. 
+              Active participant in hackathons and continuously earning new certifications in AI and data technologies to keep my skills sharp.
+            </p>
+            <ul class="quick-facts">
+              <li><strong>Major:</strong> Computer Science Engineering (Artificial Intelligence)</li>
+              <li><strong>University:</strong> S.R. Institution of Management and Technology Lucknow</li>
+              <li><strong>Activities:</strong> Organizing Hackathon Events</li>
+              <li><strong>Status:</strong> Currently Pursuing B-Tech</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="section glass-panel">
+        <h2 class="section-title">Technical <span>Arsenal</span></h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="tags">
+              <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>Java</span>
+              <span>C++</span><span>HTML/CSS</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks/Libs</h3>
+            <div class="tags">
+              <span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span>
+              <span>Django</span><span>Flask</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>Docker</span><span>AWS</span>
+              <span>Figma</span><span>VS Code</span><span>Postman</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Concepts</h3>
+            <div class="tags">
+              <span>Data Structures</span><span>Algorithms</span><span>REST APIs</span>
+              <span>Machine Learning</span><span>Agile/Scrum</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI & ML SECTION -->
+      <section id="ai-tech" class="section glass-panel ai-section">
+        <h2 class="section-title">Artificial <span>Intelligence</span></h2>
+        <div class="ai-architecture-grid">
+          <div class="ai-card">
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path d="M9 12a3 3 0 106 0 3 3 0 00-6 0z" /><path d="M12 3v2" /><path d="M12 19v2" /><path d="M3 12h2" /><path d="M19 12h2" /><path d="M5.6 5.6l1.4 1.4" /><path d="M18.4 18.4l-1.4-1.4" /><path d="M5.6 18.4l1.4-1.4" /><path d="M18.4 5.6l-1.4 1.4" /></svg>
+              </div>
+              <h3>Neural Networks</h3>
+              <p>Designing and optimizing Deep Learning architectures, including CNNs for vision and Transformers for NLP.</p>
+              <div class="tech-stack-mini"><span>PyTorch</span><span>TensorFlow</span><span>Keras</span></div>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+              </div>
+              <h3>Large Language Models</h3>
+              <p>Fine-tuning foundational models and implementing Advanced Retrieval-Augmented Generation (RAG) pipelines.</p>
+              <div class="tech-stack-mini"><span>LangChain</span><span>HuggingFace</span><span>Pinecone</span></div>
+            </div>
+          </div>
+          <div class="ai-card">
+            <div class="ai-card-glow"></div>
+            <div class="ai-card-content">
+              <div class="ai-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <h3>MLOps & Deployment</h3>
+              <p>End-to-end model lifecycle management, ensuring scalable and reliable AI inference in production environments.</p>
+              <div class="tech-stack-mini"><span>Docker</span><span>Kubernetes</span><span>MLflow</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="terminal-interface">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">~/models/inference.py</span>
+          </div>
+          <div class="terminal-body">
+             <div id="dynamic-typing-container">
+               <span class="prompt">satyendra@ai-lab:~$</span> <span id="typing-text"></span><span class="cursor-blink">|</span>
+             </div>
+             <div id="terminal-output" style="display: none;">
+               <div class="term-line success">[✓] Loading Transformer Weights... [4.5GB]</div>
+               <div class="term-line success">[✓] Initializing GPU Envrionment... [CUDA 12.1]</div>
+               <div class="term-line output">{</div>
+               <div class="term-line output">&nbsp;&nbsp;"status": "online",</div>
+               <div class="term-line output">&nbsp;&nbsp;"accuracy": "98.7%",</div>
+               <div class="term-line output">&nbsp;&nbsp;"latency": "42ms"</div>
+               <div class="term-line output">}</div>
+               <div class="term-line prompt-line"><span class="prompt">satyendra@ai-lab:~$</span><span class="cursor-blink">|</span></div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section glass-panel">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <h3>College ERP</h3>
+              <p>A comprehensive enterprise resource planning system for managing college resources and student activities.</p>
+              <div class="project-tech"><span>Java</span><span>MySQL</span><span>HTML/CSS</span></div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Brain Tumor Detective Website</h3>
+              <p>An AI-powered web application for detecting brain tumors and assisting with medical diagnosis.</p>
+              <div class="project-tech"><span>Python</span><span>Machine Learning</span><span>JavaScript</span></div>
+            </div>
+          </div>
+          <div class="project-card" onclick="window.open('https://sentiment-scope--jkmjmomjko.replit.app/', '_blank')" style="cursor: pointer;" title="View Live Project">
+            <div class="project-content">
+              <h3>Sentiment Analysis Platform <svg style="width: 18px; vertical-align: middle; margin-left: 4px; padding-bottom: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></h3>
+              <p>A full-stack, AI-driven dashboard featuring real-time text analysis, interactive analytics, and comprehensive inference history logs using NLP.</p>
+              <div class="project-tech"><span>Python (FastAPI)</span><span>React</span><span>NLP (LSTM/BERT)</span></div>
+            </div>
+          </div>
+          <div class="project-card" onclick="window.open('https://melodious-cajeta-9e4129.netlify.app/', '_blank')" style="cursor: pointer;" title="View Live Project">
+            <div class="project-content">
+              <h3>Students Information Management System <svg style="width: 18px; vertical-align: middle; margin-left: 4px; padding-bottom: 2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></h3>
+              <p>A robust and scalable database application designed to efficiently handle student enrollments, academic records, and secure data storage.</p>
+              <div class="project-tech"><span>Database Design</span><span>Backend</span><span>UI/UX</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES SECTION -->
+      <section id="certificates" class="section glass-panel">
+        <h2 class="section-title">Licenses & <span>Certificates</span></h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-data-analyst.jpg" alt="Data Analyst" onerror="this.style.opacity=0"></div>
+            <h4>Data Analyst Certification</h4>
+            <p>OneRoadmap</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-deloitte.jpg" alt="Deloitte" onerror="this.style.opacity=0"></div>
+            <h4>Deloitte Australia - Data Analytics</h4>
+            <p>Forage Job Simulation</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-gemini.jpg" alt="Gemini" onerror="this.style.opacity=0"></div>
+            <h4>Generative AI for Educators with Gemini</h4>
+            <p>United Latino Students Association</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-vista.jpg" alt="Vista Equity" onerror="this.style.opacity=0"></div>
+            <h4>Vista Equity Partners - AI in Action</h4>
+            <p>Forage Job Simulation</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-tcs.jpg" alt="TCS" onerror="this.style.opacity=0"></div>
+            <h4>Yuva AI for All</h4>
+            <p>TCS iON</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-powerbi.jpg" alt="Power BI" onerror="this.style.opacity=0"></div>
+            <h4>Power BI Micro Course</h4>
+            <p>SkillCourse</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-google.jpg" alt="Google" onerror="this.style.opacity=0"></div>
+            <h4>Chromebooks for Educators</h4>
+            <p>Google</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-query.jpg" alt="Query Quest" onerror="this.style.opacity=0"></div>
+            <h4>Certificate of Participation</h4>
+            <p>Query Quest (Unstop)</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-tata.jpg" alt="TATA Crucible" onerror="this.style.opacity=0"></div>
+            <h4>Certificate of Participation</h4>
+            <p>TATA Crucible Campus Quiz 2025</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-img-wrapper"><img src="./images/cert-unstop.jpg" alt="Unstops Got Latent" onerror="this.style.opacity=0"></div>
+            <h4>Certificate of Participation</h4>
+            <p>Unstop's Got Latent (Tata Group)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="section glass-panel">
+        <h2 class="section-title">Academic <span>Background</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="edu-card">
+              <h3>S.R. Institution of Management and Technology Lucknow</h3>
+              <h4>B-Tech in Computer Science Engineering (Artificial Intelligence)</h4>
+              <span class="edu-date">Currently Pursuing</span>
+              <p><strong>Focus Areas:</strong> Deep Learning, Natural Language Processing, Machine Learning.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="edu-card">
+              <h3>Capital Public School, Lucknow</h3>
+              <h4>Intermediate</h4>
+              <span class="edu-date">2022 – 2023</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="edu-card">
+              <h3>Capital Public School, Lucknow</h3>
+              <h4>Highschool</h4>
+              <span class="edu-date">2020 – 2021</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section glass-panel">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="contact-desc">Currently open for summer 2025 internships, freelance opportunities, or just a chat!</p>
+        
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <a href="tel:9455045547">9455045547</a>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📧</span>
+              <a href="mailto:satyeky9793@gmail.com">satyeky9793@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <span>Lucknow, Uttar Pradesh</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">💼</span>
+              <a href="https://www.linkedin.com/in/satyendra-yadav-6b9376315" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+      <footer class="footer-section">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2 class="logo">Satyendra.dev</h2>
+            <p>Designing digital experiences with passion & precision.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#hero">Return to Top ⯅</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/satyendra-yadav-6b9376315" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Satyendra Yadav. All rights reserved.</p>
+          <p class="built-with">Built organically with Three.js, GSAP & Vanilla UI 🚀</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+      <a href="#" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/satyendra-yadav-6b9376315" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <a href="mailto:satyeky9793@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      </a>
+      <div class="sidebar-line"></div>
+    </div>
+    
+    <!-- AI Agent Chatbot -->
+    <div class="chat-bot-container">
+      <div class="chat-bot-window" id="chat-bot-window">
+        <div class="chat-bot-header">
+          <div class="chat-bot-title">
+            <svg class="ai-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z"/></svg>
+            <h3>Nexus AI Assistant</h3>
+          </div>
+          <div class="chat-header-actions">
+            <button id="chat-bot-clear" aria-label="Clear Chat" title="Clear Context">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+            <button id="chat-bot-close" aria-label="Close Chat">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        </div>
+        <div class="chat-bot-messages" id="chat-bot-messages">
+          <div class="message ai">
+            <p>Hi! I'm Satyendra's AI Agent. How can I help you today?</p>
+          </div>
+          <div class="chat-quick-replies" id="chat-quick-replies">
+            <button class="quick-reply-btn">What are your top skills?</button>
+            <button class="quick-reply-btn">Tell me about your projects.</button>
+            <button class="quick-reply-btn">Download Resume</button>
+            <button class="quick-reply-btn">How can I contact you?</button>
+          </div>
+        </div>
+        <div class="chat-bot-input">
+          <input type="text" id="chat-bot-input" placeholder="Ask about me...">
+          <button id="chat-bot-send">Send</button>
+        </div>
+      </div>
+      <button class="chat-bot-toggle" id="chat-bot-toggle" aria-label="Open Chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
